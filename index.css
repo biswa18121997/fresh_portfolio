@@ -1,0 +1,263 @@
+body{
+    background-color: rgb(71, 70, 70);
+}
+nav{
+    z-index: 2;
+    width: 100vw;
+    height: 20vh;
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    background-color: transparent;
+    color: white;
+    i{
+        font-size: xx-large;
+    }
+}
+.nav2{
+    a{
+        padding: 10px;
+        margin: 10px;
+        text-shadow: 2px 2px 1px black;
+    }
+}
+.nav2{
+    padding-left: 200px;
+    display: flex;
+    border-radius: 20px;
+    justify-content:space-evenly;
+    align-items: center;
+    background: transparent;
+    background-image:
+   
+  
+}
+.nav1{
+    display: flex;
+    gap: 5px;
+    i{
+        font-weight: bolder;
+        font-size: 7vw;
+    }
+    img{
+        height: 15vh;
+        width: 20vw;
+        border-radius: 40px;
+        box-shadow: 10px 10px 5px black;
+    }
+}
+.home{
+    background: url("pexels-kevin-ku-92347-577585.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-position:center;
+    animation: bgchange 10s ease-in-out   ;
+    overflow: hidden;
+}
+#homsub{
+    
+    display: flex;
+   overflow: hidden;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.objholder{
+    position:absolute;
+    height: 20vh;
+    width: 20vh;
+    background-color: blue;
+    border-radius: 50%;
+    overflow:hidden;
+    box-shadow: 5px 5px 2px black;
+    
+    img{
+        position: absolute;
+        
+    }
+
+}
+.midcir{
+    position: ;
+    height: 30vh;
+    width: 30vh;
+    background-color: rgb(113, 113, 203);
+    border-radius: 50%;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    animation: homeanim 5s ease-in-out  infinite alternate-reverse ;
+}
+.lastcir{
+    position: ;
+    height: 50vh;
+    width: 50vh;
+    background-color: rgb(157, 157, 182);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    animation: homeanim 5s ease-in-out  infinite alternate-reverse ;
+}
+@keyframes homeanim {
+    0%,100%{
+        transform: scale(100%);
+
+        
+    }
+    20%{
+        transform: scale(120%);
+
+        
+    }
+    40%{
+        transform: scale(140%);
+
+        
+    }
+    60%{
+        transform: scale(160%);
+
+        
+    }
+    80%{
+        transform: scale(180%);
+
+        
+    }
+    
+}
+
+
+
+@keyframes bgchange {
+    from 0%,100% {
+        background: url("pexels-kevin-ku-92347-577585.jpg");
+    
+    }
+    to 50%{
+        background: url("premium_photo-1661872817492-fd0c30404d74.avif");
+        
+
+    }
+    to 75%{
+        background: url("pexels-kevin-ku-92347-577585.jpg");
+   
+    }
+}
+.certs{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 10px;
+    justify-content: space-around;
+    
+    .certsitems{
+        position: relative;     
+        object-fit: cover;
+        background-color: rgb(103, 103, 243);
+        img{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: 2;
+        }
+        section{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: 1;
+            border: 2px solid red;
+            h1{
+                background-color: red;
+                padding: 10px;
+                border-top-right-radius: 20px ;
+                border-top-left-radius: 20px ;
+                color: white;
+                font-weight: bolder;
+                text-decoration: underline;
+              
+            }
+          button{
+            border: 1px double red;
+            background-color: brown;
+            margin-top: 10px;
+            padding: 5px; 
+            border-radius: 20px;
+            font-weight: bolder;
+            box-shadow: 5px 5px 2px black;
+          }
+        }
+    }
+    
+}
+#item1:hover{
+    overflow: hidden;
+    img{
+        transform: translateY(-80%);
+        transition-duration: 1s;
+
+    }
+
+}
+#item2:hover{
+    overflow: hidden;
+    img{
+        transform: translateX(-80%);
+        transition-duration: 1s;
+
+    }
+
+}
+#item3:hover{
+    overflow: hidden;
+    img{
+        transform: translateX(-80%);
+        transition-duration: 1s;
+
+    }
+
+}
+#item4:hover{
+    overflow: hidden;
+    img{
+        transform: translateX(80%);
+        transition-duration: 1s;
+
+    }
+
+}
+#item5:hover{
+    overflow: hidden;
+    img{
+        transform: translateX(80%);
+        transition-duration: 1s;
+
+    }
+
+}
+#item6:hover{
+    overflow: hidden;
+    img{
+        transform: translateY(-80%);
+        transition-duration: 1s;
+
+    }
+
+}
+
+#certs-heading{
+    text-align: center;
+    height: 100px;
+    font-size: xx-large;
+}
